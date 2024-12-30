@@ -5,6 +5,7 @@ public class DestroyCube : MonoBehaviour
 {
     // Start is called before the first frame update
     public LogicScript logic;
+    public GameObject explosionEffect;
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
@@ -20,6 +21,9 @@ public class DestroyCube : MonoBehaviour
         {
             Destroy(gameObject);
             logic.addScore(1);
+            Instantiate(explosionEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+
         }
     }
 

@@ -8,7 +8,7 @@ public class spawnCube : MonoBehaviour
     public float spawnRate=2;
     public float Timer= 0;
     public float boxesAppeared= 0;
-    public float heightOffsetX= 0.5f, heightOffsetY= 0.5f, offsetZ= 2;
+    public float heightOffsetX= 0.1f, heightOffsetY= 0.1f, offsetZ= 2;
     // Start is called before the first frame update
     void Start()
     {

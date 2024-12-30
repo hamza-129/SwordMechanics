@@ -471,8 +471,8 @@ MonoBehaviour:
   spawnRate: 2
   Timer: 0
   boxesAppeared: 0
-  heightOffsetX: 1
-  heightOffsetY: 1
+  heightOffsetX: 0.1
+  heightOffsetY: 0.1
   offsetZ: 2
 --- !u!4 &938244231
 Transform:
@@ -658,8 +658,8 @@ Camera:
   m_GameObject: {fileID: 975719674}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -954,6 +954,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!1 &1580802174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580802175}
+  m_Layer: 0
+  m_Name: SpawnChecktime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580802175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580802174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.33201274, y: 0.99708664, z: -7.779456}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605482725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,7 +1075,7 @@ GameObject:
   - component: {fileID: 1667395231}
   - component: {fileID: 1667395230}
   m_Layer: 0
-  m_Name: Cube Destroy
+  m_Name: Add Score
   m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1092,3 +1123,4 @@ SceneRoots:
   - {fileID: 959366135}
   - {fileID: 646634619}
   - {fileID: 1667395231}
+  - {fileID: 1580802175}
